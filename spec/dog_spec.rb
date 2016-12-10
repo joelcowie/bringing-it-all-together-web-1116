@@ -29,7 +29,7 @@ describe "Dog" do
     end
 
     it 'accepts key value pairs as arguments to initialize' do
-      params = {id: 1, name: "Caldwell", breed: "toy poodle"}
+      params = {id: 1, breed: "toy poodle", name: "Caldwell"}
 
       dog = Dog.new(params)
       expect(dog.name).to eq("Caldwell")
